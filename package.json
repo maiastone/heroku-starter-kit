@@ -14,7 +14,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.15.3",
     "express": "^4.14.1",
+    "jquery": "^3.1.1",
     "path": "^0.12.7"
   }
 }

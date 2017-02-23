@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 app.get('/api/things', (req, res) => {
   const things = app.locals.things;
   res.json(things);
-})
+});
 
 app.post('/api/things', (req, res) => {
   const newThing = {
@@ -35,7 +35,7 @@ app.post('/api/things', (req, res) => {
   }
   app.locals.things.push(newThing);
   res.status(201).json(app.locals.things)
-})
+});
 
 const server = http.createServer(app)
 .listen(port, () => {
